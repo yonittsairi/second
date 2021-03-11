@@ -1,0 +1,13 @@
+<h1> האורבניסטית - חנויות יד שניה אונליין
+</h1>
+<div *ngIf="shops" class="content-wrapper">
+
+    <div class="news-card" *ngFor="let shop of shops" [shop]="shop">
+        <img class="news-card__image" src={{shop.image}} />
+        <div class="news-card__title">{{shop.title}}</div>
+
+        <!-- <p>{{shop.description}}</p> -->
+        <a class="news-card__card-link" href={{shop.url}}></a>
+    </div>
+
+</div>
